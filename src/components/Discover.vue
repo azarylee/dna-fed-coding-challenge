@@ -54,5 +54,13 @@ export default {
         #label{ 
             top: 0;
         }
+
+        @media (max-width: 812px) { 
+            h3{
+                @include text('Roboto', 18px !important, 5px, bolder);
+            }
+        }
     }
+
+    
 </style>

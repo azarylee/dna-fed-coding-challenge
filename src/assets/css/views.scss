@@ -64,6 +64,11 @@
     align-items: center;
 }
 
+@media (max-width: 845px) {
+    .bgColor {
+        justify-content: center;
+    }
+}
 
 //price
 .price {
@@ -145,5 +150,16 @@
         border-top: solid $lightGrey 1px;
         border-bottom: solid $lightGrey 1px;
         border-right: solid $lightGrey 1px;
+    }
+}
+
+@media (max-width: 812px) {
+    .title {
+        @include text('Roboto', 0.5px !important, 1px !important);
+    }
+
+    .list-subtitle {
+        word-break: break-word !important;
+        width: 55% !important;
     }
 }

@@ -20,11 +20,15 @@ export default {
 
 <style lang="scss">
     #product-carousel {
-            position: relative;
-            left: 50%;
-            transform: translate(3%);
+            transform: translate(18%);
         img{
             width: 100%;
         }
+    }
+
+    @media (max-width: 845px) {
+        #product-carousel {
+            transform: translate(0%);
+        }    
     }
 </style>

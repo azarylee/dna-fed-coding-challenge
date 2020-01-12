@@ -43,4 +43,10 @@ export default {
             margin: 45px 0;
         }
     }
+
+    @media (max-width: 812px) {
+        #product-info  {
+            padding: 8rem 0;
+        }   
+    }
 </style>

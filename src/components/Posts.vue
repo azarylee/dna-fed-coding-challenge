@@ -52,3 +52,17 @@ export default {
     },
 }
 </script>
+
+<style lang="scss">
+    #posts {
+        .bgColor {
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 845px) {
+            .bgColor {
+                justify-content: center;
+            }    
+        }
+    }
+</style>

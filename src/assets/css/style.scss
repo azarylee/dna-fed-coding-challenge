@@ -245,3 +245,12 @@ ul {
         padding: 0;
     }
 }
+
+.is-active>a {
+    color: $black !important;
+    border-bottom-color: $black !important;
+}
+
+.carousel .carousel-indicator {
+    justify-content: start!important;
+}

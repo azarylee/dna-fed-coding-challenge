@@ -7,7 +7,7 @@
         <Arrivals />   
         <Lists />
         <Posts />
-        <Content />
+        <Contents />
     </div>
 </template>
 
@@ -15,7 +15,7 @@
     import Arrivals from './components/NewArrivals.vue';
     import Lists from './components/List.vue';
     import Posts from './components/Posts.vue';
-    import Content from './components/Content.vue';
+    import Contents from './components/Content.vue';
 
     export default {
         name: 'app',
@@ -23,7 +23,7 @@
             Arrivals,
             Lists,
             Posts,
-            Content
+            Contents
         }
     }
 </script>

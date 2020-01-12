@@ -20,4 +20,15 @@ export default {
             width: 80%;
         }
     }
+    @media (max-width: 845px) and (min-width: 813px) {
+        #product-img  {
+            margin-left: 10rem;
+        }    
+    }
+
+    @media (max-width: 812px) {
+        #product-img  {
+            margin-left: 5rem;
+        }   
+    }
 </style>
