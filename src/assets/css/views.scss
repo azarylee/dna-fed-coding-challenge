@@ -1,0 +1,149 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+//logo
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+
+    .logo {
+        font-size: 36px;
+        font-family: 'Open Sans';
+        letter-spacing: 5px;
+        font-weight: bolder;
+        line-height: 0 !important;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-width: 0.85rem;
+        border-style: solid;
+        border-color: transparent transparent $carneose $carneose;
+    }
+}
+
+//label
+.label-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .label-hr {
+        width: 80%;
+        border: $grey solid 0.5px;
+        margin-bottom: 0.875rem;
+    }
+
+    .label {
+        @include text('open sans', 12px, 1px);
+    }
+}
+
+//new arrivals
+#arrivals {
+    .columns {
+        border-bottom: $lightGrey 1px solid;
+    }
+}
+
+//ProductInfo
+.details {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgColor {
+    background-color: $carneose;
+    padding: 0;
+    display: flex !important;
+    align-items: center;
+}
+
+
+//price
+.price {
+    margin-top: 45px;
+    @include text('Roboto', 16px, 1px, bolder);
+}
+
+.sale {
+    margin-left: 0.2rem;
+    @include text('Roboto', 16px, 1px, bolder, $grey);
+    text-decoration: line-through;
+}
+
+//button
+.discover-button {
+    @include btn(#ffffff, $black, 0, 20px 47px);
+    border: solid 2px $lightGrey;
+    margin-top: 63px;
+}
+.cart-button {
+    @include btn(); 
+    display: flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        @include text('Roboto', 12px, 1px, bolder, $lightGrey);
+    }
+
+    // button arrow
+    .triangle-arrow {
+        display: inline;
+        margin-left: 0.8rem;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 8px;
+        border-color: transparent transparent $lightGrey;
+        position: relative;
+        transform: rotate(90deg);
+    }
+
+    .triangle-arrow:after {
+        content: '';
+        border-style: solid;
+        border-width: 0 6px 6px;
+        border-color: transparent transparent $black;
+        position: absolute;
+        top: 3px;
+        left: -6px;
+    }
+}
+
+.title {
+    @include text('Roboto', 72px, 9px, bolder);
+    line-height: 1;
+}
+
+.sub-title {
+    @include text('Open Sans', 12px !important, 1px);
+    line-height: 1;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        position: relative;
+        border-top: solid $lightGrey 1px;
+        border-bottom: solid $lightGrey 1px;
+        border-right: solid $lightGrey 1px;
+    }
+}

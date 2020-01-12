@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+#tag {
+    background-color: $black;
+    color: $lightGrey;
+    transform: rotate(270deg);
+    padding: 3px 17px;
+    position: absolute;
+    top: 3rem;
+    left: -1.2rem;
+
+    span {
+        letter-spacing: 1px;
+    }
+}

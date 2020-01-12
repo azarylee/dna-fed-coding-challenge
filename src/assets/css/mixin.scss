@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+@mixin text($fontFamliy, $fontSize: 16px, $space: 1px, $weight: 500, $color: $black) {
+    font-family: $fontFamliy, Arial, sans-serif;
+    font-size: $fontSize;
+    letter-spacing: $space;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin btn($bgColor: $black, $color: $lightGrey, $borderRadius: 0, $padding: 30px) {
+    background-color: $bgColor;
+    color: $color;
+    border-radius: $borderRadius;
+    padding: $padding;
+    text-align: center;
+}
+
+@mixin box-shadow($xOffset:12px, $yOffset: 12px, $shadowBlur: 2px, $shadowExt: 1px, $color: rgba(30, 30, 31, 0.5)) {
+    box-shadow: $xOffset $yOffset $shadowBlur $shadowExt $color;
+}
