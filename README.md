@@ -20,4 +20,4 @@ Then start a local server:
 
 I will prefer to use the yarn, it will quicker than npm and when install once, it can be install offline later.
 
-At the last but not least, thank you for give me this opportunity to do this, I really enjoy it.
+Last but not least, thank you for give me this opportunity to do this, I really enjoy it.
